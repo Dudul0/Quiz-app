@@ -41,7 +41,7 @@ export function App() {
             correctAnswer: 'Кислород'
         },
         {
-            question: 'Какой из этих языков программирования является фреймворком для JavaScript?',
+            question: 'Что из этого является фреймворком для JavaScript?',
             answers: ['Python', 'Java', 'React', 'Ruby'],
             correctAnswer: 'React'
         },
@@ -105,7 +105,7 @@ export function App() {
     };
     
 
-    const NextButton = () => {
+    const nextButton = () => {
         setIndex(index + 1);
         setCurrentQuestion(questions[index + 1]);
         setSelected(false);
@@ -126,7 +126,7 @@ export function App() {
                 setIndex,
                 currentQuestion,
                 setCurrentQuestion,
-                NextButton,
+                nextButton,
                 findCorrectAnswer,
                 correct,
                 resetQuiz
